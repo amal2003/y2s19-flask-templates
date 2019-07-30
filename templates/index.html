@@ -1,1 +1,25 @@
 <!-- Put the HTML template for your page here! -->
+<!DOCTYPE html>
+<html>
+<head >
+	
+	<title> mlo5ie</title>
+
+</head>
+	<link rel="stylesheet" type="text/css" href="../static/style.css">
+<body class="bgcolor">
+	<h1>mlo5ie</h1>
+	<p>its the best food because i said so</p>
+	{%if opposite_days%}
+		{%for least in leasts%}
+		<li>{{least}}</li>
+		{% endfor %}
+	{%else%}
+		{%for food in foods%}
+		<li>{{food}}</li>
+		{% endfor %}
+	{%endif%}
+	
+
+</body>
+</html>
